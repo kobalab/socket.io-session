@@ -4,7 +4,7 @@ Access express-session and passport user information from socket.io
 
 ## Installation
 ```shell
-$ npm install kobalab/socket.io-session
+$ npm install @kobalab/socket.io-session
 ```
 
 ## Examples
