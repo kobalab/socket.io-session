@@ -1,0 +1,22 @@
+{
+  "name": "socket.io-session",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Access express-session and passport user information from socket.io",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kobalab/socket.io-session.git"
+  },
+  "keywords": [
+    "socket.io",
+    "express_session",
+    "passport"
+  ],
+  "author": "Satoshi Kobayashi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kobalab/socket.io-session/issues"
+  },
+  "homepage": "https://github.com/kobalab/socket.io-session#readme"
+}
