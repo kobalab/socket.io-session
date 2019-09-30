@@ -1,7 +1,9 @@
 {
-  "name": "socket.io-session",
+  "name": "@kobalab/socket.io-session",
   "version": "1.0.0",
-  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Access express-session and passport user information from socket.io",
   "main": "index.js",
   "repository": {
@@ -10,7 +12,7 @@
   },
   "keywords": [
     "socket.io",
-    "express_session",
+    "express-session",
     "passport"
   ],
   "author": "Satoshi Kobayashi",
