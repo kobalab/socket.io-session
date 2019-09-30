@@ -18,7 +18,7 @@ const session = require('express-session')({
                             resave:false,
                             saveUninitialized:false });
 
-const socket_io_session = require('socket.io-session')(session);
+const socket_io_session = require('@kobalab/socket.io-session')(session);
 
 const app = express();
 app.use(session);
@@ -48,7 +48,8 @@ const session = require('express-session')({
                             saveUninitialized:false });
 const passport = require('passport');
 
-const socket_io_session = require('socket.io-session')(session, passport);
+const socket_io_session
+              = require('@kobalab/socket.io-session')(session, passport);
 
 const app = express();
 app.use(session);
