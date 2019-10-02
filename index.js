@@ -8,10 +8,10 @@
 
 "use strict";
 
-module.exports = (session, passport)=>{
+module.exports = (session, passport, initialize_opts, session_opts)=>{
 
-    const passport_initialize = passport.initialize();
-    const passport_session    = passport.session();
+    const passport_initialize = passport.initialize(initialize_opts);
+    const passport_session    = passport.session(session_opts);
 
     return {
         express_session:
