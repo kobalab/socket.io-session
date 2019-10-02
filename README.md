@@ -29,9 +29,11 @@ const io = require('socket.io')(server);
 io.use(socket_io_session.express_session);
 
 io.on('connection', socket=>{
-    console.log(socket.request.session)
+    console.log(socket.request.session);
     socket.on('hello', msg=>{
         console.log(socket.request.session);
+        socket.request.session.hello = msg;
+        socket.request.session.save();
     });
 });
 
@@ -64,7 +66,7 @@ io.use(socket_io_session.passport_initialize);
 io.use(socket_io_session.passport_session);
 
 io.on('connection', socket=>{
-    console.log(socket.request.user)
+    console.log(socket.request.user);
     socket.on('hello', msg=>{
         console.log(socket.request.user);
     });
