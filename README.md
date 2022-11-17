@@ -16,7 +16,7 @@ const express = require('express');
 const session = require('express-session')({
                             secret:'secret',
                             resave:false,
-                            saveUninitialized:false });
+                            saveUninitialized:true });
 
 const socket_io_session = require('@kobalab/socket.io-session')(session);
 

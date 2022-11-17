@@ -10,8 +10,10 @@
 
 module.exports = (session, passport, initialize_opts, session_opts)=>{
 
-    const passport_initialize = passport.initialize(initialize_opts);
-    const passport_session    = passport.session(session_opts);
+    const passport_initialize
+                = passport && passport.initialize(initialize_opts);
+    const passport_session
+                = passport && passport.session(session_opts);
 
     return {
         express_session:
