@@ -1,3 +1,8 @@
+### v1.0.4 / 2022-11-17
+
+ - Fix bug of "TypeError" when not set parameter passport
+ - Add ChangeLog file
+
 ### v1.0.3 / 2019-10-02
 
  - Allow to set options of passport.initialize() and passport.session()
